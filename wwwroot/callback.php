@@ -18,10 +18,10 @@ foreach ($events as $event) {
     if ($event instanceof \LINE\LINEBot\Event\MessageEvent\TextMessage) {
         $reply_token = $event->getReplyToken();
         $text = $event->getText();
-        $text1 = "hahaha :)"
-        $bot->replyText($reply_token, $text1);
+        
+        $bot->replyText($reply_token, $text);
         // $bot->replyText($reply_token, "Your response");
-        // $bot->replyText($reply_token, json_encode($text1));
+        // $bot->replyText($reply_token, json_encode($text));
         // $bot->replyText($reply_token, $text1);
     }
 }
