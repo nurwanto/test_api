@@ -19,8 +19,9 @@ foreach ($events as $event) {
         $reply_token = $event->getReplyToken();
         $text = $event->getText();
 
-        $bot->replyText($reply_token, json_encode($event));
+        $bot->replyText($reply_token, $body);
     }
 }
 
 echo "OK";
+?>
